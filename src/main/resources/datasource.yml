@@ -1,0 +1,13 @@
+lucy:
+  dataSources:
+#    这里可以设置数据源的名称，例如master、database2，第一个数据源必须是master。无数据库启动时，master数据源也必须存在，可随意填写一个合法的url，不必连接成功
+    - master:
+        jdbc-url: jdbc:mysql://192.168.56.1:8033/data_cron?useSSL=false&allowPublicKeyRetrieval=true&autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    - database2:
+        jdbc-url: jdbc:mysql://192.168.56.1:8033/data_cron?useSSL=false&allowPublicKeyRetrieval=true&autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver

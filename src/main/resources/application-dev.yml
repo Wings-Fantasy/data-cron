@@ -1,0 +1,8 @@
+spring:
+  config:
+    import:
+      - classpath:datasource.yml
+      - classpath:cron.properties
+      - classpath:parameter.yml
+logging:
+  config: classpath:logback-spring.xml

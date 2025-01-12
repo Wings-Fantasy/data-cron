@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: data-cron
+  profiles:
+    active: dev
+
+mybatis:
+  type-aliases-package: com.hxshijie.datacron.business.**.vo
+  configuration:
+    map-underscore-to-camel-case: true
